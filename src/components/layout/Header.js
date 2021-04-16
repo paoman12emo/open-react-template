@@ -41,7 +41,7 @@ const Header = ({
     document.addEventListener('click', clickOutside);
     return () => {
       document.removeEventListener('keydown', keyPress);
-      document.removeEventListener('click', clickOutside);
+      document.addEventListener('click', clickOutside);
       closeMenu();
     };
   });  
